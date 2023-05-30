@@ -1,0 +1,14 @@
+:root {
+  --family: "";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.morevideo-container {
+  border: 2px solid red;
+  padding: 60px 20px;
+}

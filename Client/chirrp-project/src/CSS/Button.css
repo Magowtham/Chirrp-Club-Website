@@ -1,0 +1,51 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --pagebtn-font-color: #37b50a;
+  --pagebtn-font-size: 1.3rem;
+  --pagebtn-font-weight: 900;
+  --pagebtn-letter-spacing: 0.1px;
+  --pagebtn-background-color: #402f1d;
+}
+
+* {
+  font-family: var(--font-family);
+}
+
+.page-btn {
+  border-radius: 8px;
+  font-weight: var(--pagebtn-font-weight);
+  padding: 15px 35px;
+  text-decoration: none;
+  font-size: var(--pagebtn-font-size);
+  letter-spacing: var(--pagebtn-letter-spacing);
+  border: 0;
+  cursor: pointer;
+  background: var(--pagebtn-background-color);
+  color: var(--pagebtn-font-color);
+}
+
+.video-btn {
+  border-radius: 50%;
+  padding: 15px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+@media screen and (max-width: 960px) {
+  .page-btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    letter-spacing: var(--pagebtn-letter-spacing);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .page-btn {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    letter-spacing: var(--pagebtn-letter-spacing);
+  }
+}

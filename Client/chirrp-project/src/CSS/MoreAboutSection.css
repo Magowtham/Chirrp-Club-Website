@@ -1,0 +1,65 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --moreabout-font-color: black;
+  --moreabout-paragraphfont-size: 1.1 rem;
+  --moreabout-headingfont-size: 2rem;
+  --moreabout-subheadingfont-size: 1.1rem;
+  --moreabout-headingfont-weight: bolder;
+  --moreabout-subheadingfont-weight: 600;
+  --moreabout-paragraph-fontweight: 500;
+  --moreabout-headingletter-spacing: 1.5px;
+  --moreabout-subheadingletter-spacing: 1px;
+  --moreabout-paragraphletter-spacing: -0.1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.moreabout-text-sec {
+  margin: auto;
+  width: 60vw;
+  padding: 60px 20px;
+}
+.moreabout-text-sec p,
+li {
+  font-size: var(--moreabout-paragraphfont-size);
+  line-height: 28px;
+  font-weight: var(--moreabout-paragraph-fontweight);
+  letter-spacing: var(--moreabout-paragraphletter-spacing);
+  text-align: justify;
+}
+
+.moreabout-text-sec h2 {
+  font-size: var(--moreabout-headingfont-size);
+  line-height: 28px;
+  font-weight: var(--moreabout-headingfont-weight);
+  letter-spacing: var(--moreabout-headingletter-spacing);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.moreabout-text-sec.number-list {
+  list-style: decimal;
+}
+
+.moreabout-text-sec.number-list li {
+  font-size: var(--moreabout-subheadingfont-size);
+  line-height: 24px;
+  font-weight: var(--moreabout-subheadingfont-weight);
+  letter-spacing: var(--moreabout-subheadingletter-spacing);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .moreabout-text-sec {
+    margin: auto;
+    width: 80vw;
+    padding: 60px 20px;
+    border: 2px solid red;
+  }
+}

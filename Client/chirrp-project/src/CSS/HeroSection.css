@@ -1,0 +1,138 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --font-color: #fdf5e6;
+  --heading1font-size: 1.2rem;
+  --heading2font-size: 3rem;
+  --heading3font-size: 1.5rem;
+  --font-weight: 800;
+  --letter-spacing: -0.1px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+.hero-container {
+  /* background: linear-gradient(to bottom, #78c34b, #3d8e28); */
+  background: #0b4228;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-text-section {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 550px;
+  /* border: 2px solid red; */
+}
+.hero-headings {
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight);
+  word-spacing: -1px;
+  color: var(--font-color);
+}
+.hero-text-section .heading1 {
+  font-size: var(--heading1font-size);
+}
+
+.hero-text-section .heading2 {
+  font-size: var(--heading2font-size);
+}
+
+.hero-text-section .heading3 {
+  font-size: var(--heading3font-size);
+}
+
+.hero-logo-section {
+  max-width: 220px;
+}
+.hero-logo-section img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text-section button {
+  margin-top: 30px;
+}
+
+/* media section */
+@media screen and (max-width: 1700px) {
+  .hero-text-section {
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .hero-text-section {
+    height: 450px;
+    padding: 0px 20px;
+  }
+  .hero-text-section .heading1 {
+    font-size: 0.8rem;
+  }
+
+  .hero-text-section .heading2 {
+    font-size: 1.9rem;
+  }
+
+  .hero-text-section .heading3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .hero-logo-section {
+    max-width: 189px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .hero-text-section .heading1 {
+    font-size: 0.8rem;
+  }
+
+  .hero-text-section .heading2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text-section .heading3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hero-text-section .heading1 {
+    font-size: 0.8rem;
+  }
+
+  .hero-text-section .heading2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text-section .heading3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text-section .heading1 {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .hero-text-section .heading2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-text-section .heading3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}

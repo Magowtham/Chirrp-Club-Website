@@ -1,0 +1,72 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --video-font-color: black;
+  --video-headingfont-size: 3rem;
+  --video-headingfont-weight: bolder;
+  --video-headingletter-spacing: 1.5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.videogallery-container {
+  padding: 60px 20px;
+  width: 85vw;
+  margin: auto;
+  border: 2px solid red;
+}
+
+.videogallery-container h1 {
+  font-size: var(--video-headingfont-size);
+  font-weight: var(--video-headingfont-weight);
+  letter-spacing: var(--video-headingletter-spacing);
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+.gallery .grid .card .video-sec {
+  position: relative;
+  /* border: 2px solid rgb(51, 255, 0); */
+  display: flex;
+}
+.gallery .grid .card .video-sec video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.video-sec button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 99;
+}
+
+.videogallery-container .btn-sec button {
+  align-self: flex-start;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1600px) {
+  .videogallery-container h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .videogallery-container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .videogallery-container h1 {
+    text-align: center;
+    margin-left: 0%;
+  }
+}
