@@ -1,5 +1,19 @@
 :root {
-  --family: "";
+  --font-family: "Poppins", sans-serif;
+  --sec-heading-font-size: ;
+  --paragraph-font-size: ;
+  --card-subheading-font-size: ;
+  --sec-subheading-font-size: ;
+  --sec-heading-font-weight: ;
+  --paragraph-heading-font-weight: ;
+  --sec-heading-letter-spacing: ;
+  --paragraph-letter-spacing: ;
+  --card-subheading-letter-sapacing: ;
+  --sec-subheading-letter-spacing: ;
+  --sec-heading-line-spacing: ;
+  --paragraph-line-spacing: ;
+  --sec-subheading-line-spacing: ;
+  --card-subheading-line-spacing: ;
 }
 
 * {

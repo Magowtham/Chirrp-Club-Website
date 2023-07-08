@@ -1,15 +1,19 @@
 :root {
   --font-family: "Poppins", sans-serif;
-  --moreabout-font-color: black;
-  --moreabout-paragraphfont-size: 1.1 rem;
-  --moreabout-headingfont-size: 2rem;
-  --moreabout-subheadingfont-size: 1.1rem;
-  --moreabout-headingfont-weight: bolder;
-  --moreabout-subheadingfont-weight: 600;
-  --moreabout-paragraph-fontweight: 500;
-  --moreabout-headingletter-spacing: 1.5px;
-  --moreabout-subheadingletter-spacing: 1px;
-  --moreabout-paragraphletter-spacing: -0.1px;
+  --sec-heading-font-size: ;
+  --paragraph-font-size: ;
+  --card-subheading-font-size: ;
+  --sec-subheading-font-size: ;
+  --sec-heading-font-weight: ;
+  --paragraph-heading-font-weight: ;
+  --sec-heading-letter-spacing: ;
+  --paragraph-letter-spacing: ;
+  --card-subheading-letter-sapacing: ;
+  --sec-subheading-letter-spacing: ;
+  --sec-heading-line-spacing: ;
+  --paragraph-line-spacing: ;
+  --sec-subheading-line-spacing: ;
+  --card-subheading-line-spacing: ;
 }
 
 * {

@@ -1,26 +1,44 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --sec-heading-font-size: ;
+  --paragraph-font-size: ;
+  --card-subheading-font-size: ;
+  --sec-subheading-font-size: ;
+  --sec-heading-font-weight: ;
+  --paragraph-heading-font-weight: ;
+  --sec-heading-letter-spacing: ;
+  --paragraph-letter-spacing: ;
+  --card-subheading-letter-sapacing: ;
+  --sec-subheading-letter-spacing: ;
+  --sec-heading-line-spacing: ;
+  --paragraph-line-spacing: ;
+  --sec-subheading-line-spacing: ;
+  --card-subheading-line-spacing: ;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 .team-slider-container {
   position: relative;
 }
 
 .team-slider-card-container {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: flex;
   overflow: hidden;
   scroll-behavior: smooth;
+  /* border: 2px solid blue; */
 }
 .team-slider-container .btn-sec {
   position: relative;
-  width: 7vw;
+  width: 130px;
   height: 50px;
   margin: auto;
-  padding: 50px;
+  margin-top: 25px;
 }
 .next-btn,
 .prev-btn {

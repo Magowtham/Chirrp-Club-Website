@@ -1,16 +1,20 @@
 :root {
   --font-family: "Poppins", sans-serif;
-  --gallery-font-color: black;
-  --gallery-paragraphfont-size: 1rem;
-  --gallery-headingfont-size: 3rem;
-  --gallery-subheadingfont-size: 1.1rem;
-  --gallery-headingfont-weight: bolder;
-  --gallery-subheadingfont-weight: bolder;
-  --gallery-paragraph-fontweight: 500;
-  --gallery-headingletter-spacing: 1.5px;
-  --gallery-paragraphletter-spacing: -0.1px;
+  --sec-heading-font-size: ;
+  --paragraph-font-size: ;
+  --card-subheading-font-size: ;
+  --sec-subheading-font-size: ;
+  --sec-heading-font-weight: ;
+  --paragraph-heading-font-weight: ;
+  --sec-heading-letter-spacing: ;
+  --paragraph-letter-spacing: ;
+  --card-subheading-letter-sapacing: ;
+  --sec-subheading-letter-spacing: ;
+  --sec-heading-line-spacing: ;
+  --paragraph-line-spacing: ;
+  --sec-subheading-line-spacing: ;
+  --card-subheading-line-spacing: ;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -21,12 +25,15 @@
 .birdscollection-container {
   border: 2px solid red;
   padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .birdscollection-container .search-sec {
   /* border: 2px solid blue; */
-  width: 100%;
+  width: 60%;
   display: flex;
+  align-self: center;
 }
 .birdscollection-container .search-sec button {
   border: none;

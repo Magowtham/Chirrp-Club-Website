@@ -8,9 +8,9 @@ function Team() {
   useEffect(() => {
     const gridElement = document.querySelector(".dropdown");
     if (dropdown) {
-      gridElement.style.maxHeight = 0 + "px";
+      gridElement.style.height = gridElement.scrollHeight + "px";
     } else {
-      gridElement.style.maxHeight = gridElement.scrollHeight + "px";
+      gridElement.style.height = 0 + "px";
     }
     window.addEventListener("resize", () => {});
   }, [dropdown]);
@@ -81,7 +81,7 @@ function Team() {
         <h2 className="team-subheading">
           <span></span>Chirrp Leaders
         </h2>
-        <section className="team2-sec">
+        <section className="teamleader-sec">
           <TeamSlider />
         </section>
         <h2 className="team-subheading">

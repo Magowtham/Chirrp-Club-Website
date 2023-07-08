@@ -1,9 +1,19 @@
 :root {
   --font-family: "Poppins", sans-serif;
-  --video-font-color: black;
-  --video-headingfont-size: 3rem;
-  --video-headingfont-weight: bolder;
-  --video-headingletter-spacing: 1.5px;
+  --sec-heading-font-size: ;
+  --paragraph-font-size: ;
+  --card-subheading-font-size: ;
+  --sec-subheading-font-size: ;
+  --sec-heading-font-weight: ;
+  --paragraph-heading-font-weight: ;
+  --sec-heading-letter-spacing: ;
+  --paragraph-letter-spacing: ;
+  --card-subheading-letter-sapacing: ;
+  --sec-subheading-letter-spacing: ;
+  --sec-heading-line-spacing: ;
+  --paragraph-line-spacing: ;
+  --sec-subheading-line-spacing: ;
+  --card-subheading-line-spacing: ;
 }
 * {
   margin: 0;
