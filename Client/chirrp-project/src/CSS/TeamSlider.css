@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.team-slider-container {
+  position: relative;
+}
+
+.team-slider-card-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.team-slider-container .btn-sec {
+  position: relative;
+  width: 7vw;
+  height: 50px;
+  margin: auto;
+  padding: 50px;
+}
+.next-btn,
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.next-btn {
+  right: 0;
+}
+.prev-btn {
+  left: 0;
+}
+
+.next-btn:hover,
+.prev-btn:hover {
+  box-shadow: -0.1px 2px 15px green;
+}
+
+.next-btn i,
+.prev-btn i {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: rgb(7, 88, 18);
+  color: white;
+}

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "./Button";
+import TeamSlider from "./TeamSlider";
+import TeamNodes from "./TeamNodes";
 import "../CSS/Team.css";
 function Team() {
   const [dropdown, setDropdown] = useState(false);
@@ -17,6 +19,9 @@ function Team() {
     <>
       <div className="team-container">
         <h1>Chirpp Team</h1>
+        <h2 className="team-subheading">
+          <span></span>The one who initiated the Chirpp
+        </h2>
         <section className="team1-sec">
           <div className="team-card">
             <div className="team-grid">
@@ -73,8 +78,18 @@ function Team() {
             setDropdown={setDropdown}
           />
         </section>
-        <section className="team2-sec"></section>
-        <section className="students-sec"></section>
+        <h2 className="team-subheading">
+          <span></span>Chirrp Leaders
+        </h2>
+        <section className="team2-sec">
+          <TeamSlider />
+        </section>
+        <h2 className="team-subheading">
+          <span></span>Chirrp Student Co-ordinators
+        </h2>
+        <section className="students-sec">
+          <TeamNodes />
+        </section>
       </div>
     </>
   );

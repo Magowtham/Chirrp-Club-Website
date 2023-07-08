@@ -8,6 +8,8 @@ import VideoGallerySection from "../Components/VideoGallerySection";
 import TemplateInfo from "../Components/TemplateInfo";
 import MoreAboutSection from "../Components/MoreAboutSection";
 import Team from "../Components/Team";
+import TeamCardTemplate from "../Components/TeamCardTemplate";
+import TeamSlider from "../Components/TeamSlider";
 import "../CSS/Home.css";
 function Home() {
   const [overlay, setOverlay] = useState(true);
