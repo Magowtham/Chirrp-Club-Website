@@ -15,41 +15,87 @@ function BirdsMoreInfoSection() {
             <ul>
               <li>
                 <span>1</span>
-                Kingdom
+                <span>Kingdom</span>
+                <span></span>
               </li>
               <hr />
               <li>
-                <span>2</span>Phylum
+                <span>2</span>
+                <span>Phylum</span>
+                <span></span>
               </li>
               <hr />
               <li>
-                <span>3</span>Class
+                <span>3</span>
+                <span>Class</span>
+                <span></span>
               </li>
               <hr />
               <li>
-                <span>4</span>Order
+                <span>4</span>
+                <span>Order</span>
+                <span></span>
               </li>
               <hr />
               <li>
-                <span>5</span>Family
+                <span>5</span>
+                <span>Family</span>
+                <span></span>
               </li>
               <hr />
               <li>
-                <span>6</span>Genus
+                <span>6</span>
+                <span>Genus</span>
+                <span></span>
               </li>
               <hr />
               <li>
-                <span>7</span>Species
+                <span>7</span>
+                <span>Species</span>
+                <span></span>
               </li>
             </ul>
           </div>
-          <div className="bird-statistics-sec"></div>
+          <div className="bird-statistics-sec">
+            <div className="statastics-logo-sec">
+              <i className="material-icons">done</i>
+              <span>10,729</span>
+              <span>observatios</span>
+            </div>
+            <div className="statastics-logo-sec">
+              <i className="material-icons">photo_camera</i>
+              <span>10,729</span>
+              <span>with photos</span>
+            </div>
+            <div className="statastics-logo-sec">
+              <i className="material-icons">videocam</i>
+              <span>10,729</span>
+              <span>with videos</span>
+            </div>
+          </div>
         </div>
         <div className="bird-media-sec">
           <div className="banner-image">
-            <img src="/Media/bird-1.jpeg" alt="" />
+            <img src="/Media/bird-6.jpeg" alt="" />
           </div>
-          <div className="subimage-sec"></div>
+          <div className="subimage-sec">
+            <div className="image-sec">
+              <img src="/Media/bird-6.jpeg" alt="" />
+              <span>male</span>
+            </div>
+            <div className="image-sec">
+              <img src="/Media/bird-6.jpeg" alt="" />
+              <span>female</span>
+            </div>
+            <div className="image-sec">
+              <img src="/Media/bird-6.jpeg" alt="" />
+              <span>female</span>
+            </div>
+            <div className="image-sec">
+              <img src="/Media/bird-6.jpeg" alt="" />
+              <span>male</span>
+            </div>
+          </div>
         </div>
       </div>
     </>
