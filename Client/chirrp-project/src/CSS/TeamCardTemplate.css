@@ -1,19 +1,5 @@
 :root {
   --font-family: "Poppins", sans-serif;
-  --sec-heading-font-size: ;
-  --paragraph-font-size: ;
-  --card-subheading-font-size: ;
-  --sec-subheading-font-size: ;
-  --sec-heading-font-weight: ;
-  --paragraph-heading-font-weight: ;
-  --sec-heading-letter-spacing: ;
-  --paragraph-letter-spacing: ;
-  --card-subheading-letter-sapacing: ;
-  --sec-subheading-letter-spacing: ;
-  --sec-heading-line-spacing: ;
-  --paragraph-line-spacing: ;
-  --sec-subheading-line-spacing: ;
-  --card-subheading-line-spacing: ;
 }
 .team-card2 {
   border: 5px solid rgb(7, 88, 18);
@@ -24,7 +10,6 @@
   align-items: center;
   padding: 30px;
   border-radius: 8px;
-  margin: 0px 20px;
 }
 
 .team-card2-image {
@@ -48,6 +33,9 @@
 .team-card2-text .heading {
   font-size: 1.4rem;
 }
+.team-card2-text p {
+  font-size: 1rem;
+}
 .team-card2-icons {
   width: 60%;
   display: flex;
@@ -65,4 +53,16 @@
 
 .team-card2-icons button i {
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 720px) {
+  .team-card2-text .heading {
+    font-size: 1.2rem;
+  }
+  .team-card2-text p {
+    font-size: 0.9rem;
+  }
+  .team-card2-icons button i {
+    font-size: 1.6rem;
+  }
 }

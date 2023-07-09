@@ -3,17 +3,18 @@
   --sec-heading-font_size: 2.5rem;
   --paragraph-font_size: 1rem;
   --card-subheading-font_size: 2rem;
-  --sec-subheading-font_size: 2rem;
+  --sec-subheading-font_size: 1.8rem;
   --sec-heading-font_weight: 900;
   --paragraph-font_weight: 600;
-  --sec-heading-letter_spacing: ;
+  --sec-heading-letter_spacing: -1px;
   --paragraph-letter_spacing: ;
   --card-subheading-letter_sapacing: ;
-  --sec-subheading-letter_spacing: -2px;
+  --sec-subheading-letter_spacing: -1px;
   --sec-heading-line_spacing: ;
   --paragraph-line_spacing: 25px;
   --sec-subheading-line_spacing: ;
   --card-subheading-line_spacing: ;
+  --color: red;
 }
 * {
   margin: 0;
@@ -32,23 +33,26 @@
 .team-container h1 {
   font-size: var(--sec-heading-font_size);
   font-weight: bolder;
-  letter-spacing: var(--sec-subheading-letter_spacing);
+  letter-spacing: var(--sec-heading-letter_spacing);
+  color: var(--color);
 }
 
 .team-container .team-subheading {
-  font-size: var(--sec-subheading-font_size);
-  font-weight: var(--sec-heading-font_weight);
-  letter-spacing: var(--sec-heading-letter_spacing);
   display: flex;
   align-items: center;
   margin-left: 10%;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.team-container .team-subheadingspan {
+.team-container .team-subheading .text h2 {
+  font-size: var(--sec-subheading-font_size);
+  font-weight: var(--sec-heading-font_weight);
+  letter-spacing: var(--sec-subheading-letter_spacing);
+}
+.team-container .team-subheading .point {
   display: inline-block;
   border-radius: 50%;
-  padding: 16px;
+  padding: 9px;
   background-color: rgb(7, 88, 18);
   margin: 0px 8px 0px 0px;
 }
@@ -89,7 +93,7 @@
 }
 
 .team1-sec .team-card .team-grid .text-sec p span {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   margin-right: 8px;
   color: var(--color);
@@ -119,32 +123,23 @@
 
 .teamleader-sec {
   width: 80%;
-  /* border: 2px solid red; */
   margin: auto;
 }
 
 .students-sec {
-  width: 80%;
-  padding: 0px 40px 200px 40px;
+  width: 100%;
+  padding: 0px 0px 130px 0px;
   margin: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow-x: scroll;
   border-radius: 8px;
-  /* border: 2px solid red; */
 }
 .students-sec::-webkit-scrollbar-track {
   /* background-color: red; */
 }
 @media screen and (max-width: 1600px) {
-  .team-container h1 {
-    font-size: 2.5rem;
-  }
-  .team1-sec .team-card .team-grid .text-sec p,
-  .dropdown p {
-    --sec-heading-font_size: 2.5rem;
-    font-size: 1.05rem;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -169,37 +164,57 @@
   }
   .team-container .team-subheading {
     margin-left: 0%;
-    display: flex;
-    justify-content: center;
   }
 }
 
-@media screen and (max-width: 760px) {
-  .team-container h1 {
-    font-size: 2rem;
+@media screen and (max-width: 720px) {
+  :root {
+    --sec-heading-font_size: 2rem;
+    --sec-subheading-font_size: 1.6rem;
+    --sec-subheading-letter_sapacing: -2px;
+    --paragraph-font_size: 0.9rem;
+    --paragraph-letter_spacing: -0.5px;
+    --paragraph-line_spacing: 22px;
   }
-
-  .team1-sec .team-card .team-grid .text-sec {
-    /* border: 2px solid blue; */
+  .team-container {
+    padding: 30px 10px;
   }
-  .team1-sec .team-card .team-grid .text-sec p,
-  .dropdown p {
-    font-size: 1rem;
+  .team-container .team-subheading {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .team-container .team-subheading span {
+    padding: 7px;
+    border: 4px solid rgb(7, 88, 18);
+  }
+  .team1-sec .team-card .team-grid .text-sec p span {
+    font-size: 1.1rem;
+  }
+  .team1-sec {
+    width: 100%;
+  }
+  .teamleader-sec {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .team1-sec .team-card .team-grid .text-sec p,
-  .dropdown p {
-    word-spacing: -1px;
+  :root {
+    --sec-heading-font_size: 1.8rem;
+    --sec-subheading-font_size: 1.4rem;
   }
 }
 
-@media screen and (max-width: 380px) {
-  .team1-sec .team-card .team-grid .text-sec p,
-  .dropdown p {
-    line-height: 22px;
-    font-size: 0.9rem;
-    word-spacing: -3px;
+@media screen and (max-width: 480px) {
+  :root {
+    --sec-heading-font_size: 1.6rem;
+    --sec-subheading-font_size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .team-container .team-subheading .point {
+    align-self: flex-start;
+    margin-top: 6px;
   }
 }

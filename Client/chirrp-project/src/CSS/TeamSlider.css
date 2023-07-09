@@ -29,9 +29,9 @@
   width: 100%;
   margin: auto;
   display: flex;
+  gap: 30px;
   overflow: hidden;
   scroll-behavior: smooth;
-  /* border: 2px solid blue; */
 }
 .team-slider-container .btn-sec {
   position: relative;
@@ -72,4 +72,13 @@
   border-radius: 50%;
   background-color: rgb(7, 88, 18);
   color: white;
+}
+
+@media screen and (max-width: 380px) {
+  .team-slider-card-container {
+    overflow-x: scroll;
+  }
+  .team-slider-container .btn-sec {
+    display: none;
+  }
 }

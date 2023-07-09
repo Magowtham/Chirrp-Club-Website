@@ -19,9 +19,12 @@ function Team() {
     <>
       <div className="team-container">
         <h1>Chirpp Team</h1>
-        <h2 className="team-subheading">
-          <span></span>The one who initiated the Chirpp
-        </h2>
+        <div className="team-subheading">
+          <div className="point"></div>
+          <div className="text">
+            <h2>The one who initiated the Chirpp</h2>
+          </div>
+        </div>
         <section className="team1-sec">
           <div className="team-card">
             <div className="team-grid">
@@ -78,15 +81,21 @@ function Team() {
             setDropdown={setDropdown}
           />
         </section>
-        <h2 className="team-subheading">
-          <span></span>Chirrp Leaders
-        </h2>
+        <div className="team-subheading">
+          <div className="point"></div>
+          <div className="text">
+            <h2>Chirrp Leaders</h2>
+          </div>
+        </div>
         <section className="teamleader-sec">
           <TeamSlider />
         </section>
-        <h2 className="team-subheading">
-          <span></span>Chirrp Student Co-ordinators
-        </h2>
+        <div className="team-subheading">
+          <div className="point"></div>
+          <div className="text">
+            <h2>Chirrp Student Co-ordinators</h2>
+          </div>
+        </div>
         <section className="students-sec">
           <TeamNodes />
         </section>

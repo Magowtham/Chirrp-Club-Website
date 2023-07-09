@@ -11,15 +11,17 @@ import Team from "../Components/Team";
 import TeamCardTemplate from "../Components/TeamCardTemplate";
 import TeamSlider from "../Components/TeamSlider";
 import "../CSS/Home.css";
+import BirdsMoreInfoSection from "../Components/BirdMoreInfoSection";
 function Home() {
   const [overlay, setOverlay] = useState(true);
   return (
     <div className={`home ${overlay ? `` : `overlay`}`}>
-      <HeroSection setOverlay={setOverlay} />
+      {/* <HeroSection setOverlay={setOverlay} />
       <AboutSection />
       <GallerySection />
       <VideoGallerySection />
-      <Team />
+      <Team /> */}
+      <BirdsMoreInfoSection />
     </div>
   );
 }
