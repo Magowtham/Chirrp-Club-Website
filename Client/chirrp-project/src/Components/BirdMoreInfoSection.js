@@ -1,4 +1,5 @@
 import React from "react";
+import BirdsPhotoTemplate from "./BirdsPhotoTemplate";
 import "../CSS/BirdMoreInfoSection.css";
 function BirdsMoreInfoSection() {
   const myna = "hello";
@@ -95,6 +96,50 @@ function BirdsMoreInfoSection() {
               <img src="/Media/bird-6.jpeg" alt="" />
               <span>male</span>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="pipe pipe1"></div>
+      <div className="indentification-sec">
+        <h1>Indentification</h1>
+        <p>
+          Brightly-colored but sluggish medium-sized bird. Unmistakable; the
+          only trogon in its range. Male has black head, white “belt,” and
+          bright red belly. Female has a brown head and orangish underparts.
+          Both sexes have a bright blue bill. Sits quietly in the middle levels
+          of forests, often near bamboo clusters; also follows mixed-species
+          foraging flocks. Gives a series of inflected yelps: “kweh, kweh, kweh.
+        </p>
+      </div>
+      <div className="pipe pipe2"></div>
+      <div className="allmedia-sec">
+        <h1>All Media</h1>
+        <div className="pipe pipe3"></div>
+        <div className="photo-sec">
+          v
+          <div className="grid">
+            <BirdsPhotoTemplate
+              onClickRout={{ url: "/Media/bird-1.jpeg" }}
+              imageSrc="/Media/bird-1.jpeg"
+              birdName="Malabar Whistling Thrush"
+              birdScientificName="myophonous horsfieldii"
+              photographerName="Mike Prince"
+              day="23"
+              month="Nov"
+              year="2016"
+              location="Shobhavana Campus"
+            />
+            <BirdsPhotoTemplate
+              onClickRout={{ url: "/Media/bird-1.jpeg" }}
+              imageSrc="/Media/bird-1.jpeg"
+              birdName="Malabar Whistling Thrush"
+              birdScientificName="myophonous horsfieldii"
+              photographerName="Mike Prince"
+              day="23"
+              month="Nov"
+              year="2016"
+              location="Shobhavana Campus"
+            />
           </div>
         </div>
       </div>

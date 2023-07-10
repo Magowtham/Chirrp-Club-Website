@@ -168,3 +168,45 @@
   object-position: center;
   border-radius: 8px;
 }
+.indentification-sec {
+  border: 2px solid red;
+  width: 80%;
+  margin: auto;
+}
+
+.pipe {
+  width: 6px;
+  background: red;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.pipe1 {
+  height: 200px;
+  margin-left: 20vw;
+}
+.pipe2 {
+  height: 220px;
+  margin-left: 20vw;
+}
+.pipe3 {
+  height: 30px;
+  margin-left: 15vw;
+}
+.allmedia-sec {
+  border: 2px solid red;
+  height: 50px;
+  width: 80vw;
+  margin: auto;
+}
+
+.allmedia-sec .photo-sec {
+  border: 2px solid blue;
+  width: 60vw;
+  margin: auto;
+}
+.allmedia-sec .photo-sec .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 45px;
+  column-gap: 35px;
+}

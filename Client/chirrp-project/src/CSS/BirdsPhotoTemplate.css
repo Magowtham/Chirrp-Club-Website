@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.birds-template-card {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.birds-template-card .image-sec {
+  position: relative;
+}
+
+.birds-template-card .image-sec img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.birds-template-card .text-sec {
+  position: relative;
+}
+
+.birds-template-card .text-sec h2 {
+  font-size: var(--gallery-subheadingfont-size);
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-weight: var(--gallery-subheadingfont-weight);
+}
+.birds-template-card .text-sec p {
+  font-size: var(--gallery-paragraphfont-size);
+  margin-top: 0.5px;
+  margin-bottom: 0.5px;
+  font-weight: var(--gallery-paragraph-fontweight);
+  letter-spacing: var(--gallery-paragraphletter-spacing);
+}
+
+.day,
+.month,
+.year {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+@media screen and (max-width: 1600px) {
+  .birds-template-card .text-sec h2 {
+    font-size: 1rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .birds-template-card .text-sec p {
+    font-size: 0.9rem;
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .gallery .grid .card .text-sec h2 {
+    font-size: 1rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .gallery .grid .card .text-sec p {
+    font-size: 0.9rem;
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+  }
+}
