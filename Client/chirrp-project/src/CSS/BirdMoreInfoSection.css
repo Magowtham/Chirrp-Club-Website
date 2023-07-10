@@ -111,7 +111,7 @@
 }
 
 .banner-image {
-  /* border: 5px solid rgb(246, 255, 0); */
+  border: 5px solid rgb(246, 255, 0);
   height: 100%;
 }
 
@@ -119,6 +119,7 @@
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .bird-media-sec .subimage-sec {
@@ -189,7 +190,11 @@
   margin-left: 20vw;
 }
 .pipe3 {
-  height: 30px;
+  height: 80px;
+  margin-left: 15vw;
+}
+.pipe4 {
+  height: 80px;
   margin-left: 15vw;
 }
 .allmedia-sec {
@@ -201,12 +206,20 @@
 
 .allmedia-sec .photo-sec {
   border: 2px solid blue;
-  width: 60vw;
+  width: 70vw;
   margin: auto;
 }
+
 .allmedia-sec .photo-sec .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: 45px;
-  column-gap: 35px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.allmedia-sec .video-sec {
+  border: 2px solid red;
+  width: 70vw;
+  margin: auto;
+}
+.allmedia-sec .video-sec .grid {
+  display: flex;
 }

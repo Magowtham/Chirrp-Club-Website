@@ -16,7 +16,10 @@ function BirdsPhotoTemplate({
   }
   return (
     <>
-      <div className="card" onClick={fullScreenImage.bind(onClickRout)}>
+      <div
+        className="birds-template-card"
+        onClick={fullScreenImage.bind(onClickRout)}
+      >
         <div className="image-sec">
           <img src={imageSrc} alt="" />
         </div>

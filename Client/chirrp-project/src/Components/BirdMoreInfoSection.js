@@ -1,5 +1,6 @@
 import React from "react";
 import BirdsPhotoTemplate from "./BirdsPhotoTemplate";
+import BirdsVideoTemplate from "./BirdsVideoTemplate";
 import "../CSS/BirdMoreInfoSection.css";
 function BirdsMoreInfoSection() {
   const myna = "hello";
@@ -77,7 +78,7 @@ function BirdsMoreInfoSection() {
         </div>
         <div className="bird-media-sec">
           <div className="banner-image">
-            <img src="/Media/bird-6.jpeg" alt="" />
+            <img src="/Media/bird-7.jpeg" alt="" />
           </div>
           <div className="subimage-sec">
             <div className="image-sec">
@@ -116,7 +117,7 @@ function BirdsMoreInfoSection() {
         <h1>All Media</h1>
         <div className="pipe pipe3"></div>
         <div className="photo-sec">
-          v
+          <h2>Captured Photos</h2>
           <div className="grid">
             <BirdsPhotoTemplate
               onClickRout={{ url: "/Media/bird-1.jpeg" }}
@@ -138,6 +139,44 @@ function BirdsMoreInfoSection() {
               day="23"
               month="Nov"
               year="2016"
+              location="Shobhavana Campus"
+            />
+            <BirdsPhotoTemplate
+              onClickRout={{ url: "/Media/bird-1.jpeg" }}
+              imageSrc="/Media/bird-1.jpeg"
+              birdName="Malabar Whistling Thrush"
+              birdScientificName="myophonous horsfieldii"
+              photographerName="Mike Prince"
+              day="23"
+              month="Nov"
+              year="2016"
+              location="Shobhavana Campus"
+            />
+            <BirdsPhotoTemplate
+              onClickRout={{ url: "/Media/bird-1.jpeg" }}
+              imageSrc="/Media/bird-1.jpeg"
+              birdName="Malabar Whistling Thrush"
+              birdScientificName="myophonous horsfieldii"
+              photographerName="Mike Prince"
+              day="23"
+              month="Nov"
+              year="2016"
+              location="Shobhavana Campus"
+            />
+          </div>
+        </div>
+        <div className="pipe pipe4"></div>
+        <div className="video-sec">
+          <h2>Captured Videos</h2>
+          <div className="grid">
+            <BirdsVideoTemplate
+              videoSrc="/Media/v1.mp4"
+              birdName="Malabar Whistling Thrush"
+              birdScientificName="myophonous horsfieldii"
+              photographer="Mike Prince"
+              day="23"
+              month="Nov"
+              year="2020"
               location="Shobhavana Campus"
             />
           </div>
