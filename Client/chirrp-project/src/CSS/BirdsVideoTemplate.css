@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-.birds-template-card .video-sec {
+.birds-template-card .template-video-sec {
   position: relative;
   border: 5px solid rgb(51, 255, 0);
-  width: 50%;
+  width: 300px;
+  max-width: 300px;
 }
 
-.birds-template-card .video-sec video {
+.birds-template-card .template-video-sec video {
   width: 100%;
   height: 100%;
   object-fit: cover;

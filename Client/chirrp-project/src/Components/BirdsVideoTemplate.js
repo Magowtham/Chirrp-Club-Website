@@ -15,7 +15,7 @@ function BirdsVideoTemplate({
   return (
     <>
       <div className="birds-template-card">
-        <div className="video-sec">
+        <div className="template-video-sec">
           <Button
             title={<i className="material-icons">play_arrow</i>}
             videoBtn={true}
