@@ -8,59 +8,77 @@
   /* border: 2px solid red; */
   display: flex;
   width: 80%;
-  height: 90vh;
+  height: 80vh;
   margin: auto;
   margin-top: 50px;
 }
 
 .bird-info-sec {
-  /* border: 2px solid yellow; */
   width: 30%;
   height: 100%;
   padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .bird-info-sec .heading-sec {
   /* background: red; */
   height: 20%;
-  font-family: "Noto Sans", sans-serif;
-  font-family: "Roboto", sans-serif;
+  height: fit-content;
 }
 .bird-info-sec .heading-sec h1 {
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 .bird-info-sec .heading-sec h2 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  font-family: "Edu TAS Beginner", cursive;
 }
 
 .bird-info-sec .scientific-info-sec {
-  /* background-color: aqua; */
   height: 55%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-
+.bird-info-sec .scientific-info-sec .node-sec {
+  /* border: 2px solid red; */
+  width: 15%;
+}
+.bird-info-sec .scientific-info-sec .biologoical-order-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+}
+.bird-info-sec .scientific-info-sec .biological-data-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
 .bird-info-sec .scientific-info-sec ul {
-  /* border: 2px solid black; */
   list-style: none;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .bird-info-sec .scientific-info-sec ul hr {
   width: 4px;
   height: 20px;
-  margin-left: 18px;
   background: green;
 }
 
-.bird-info-sec .scientific-info-sec ul li {
-  display: flex;
-  align-items: center;
-  position: relative;
+.scientific-info-sec .node-sec ul li {
+  /* border: 2px solid blue; */
+  width: fit-content;
 }
 
 .bird-info-sec .scientific-info-sec ul li span:nth-child(1) {
@@ -73,15 +91,19 @@
   max-width: 40px;
   max-height: 40px;
   border-radius: 50%;
-  margin-right: 10px;
 }
 
-.bird-info-sec .scientific-info-sec ul li span:nth-child(2) {
-  text-transform: uppercase;
+.scientific-info-sec .biologoical-order-sec h2 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.scientific-info-sec .biological-data-sec h2 {
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 .bird-info-sec .bird-statistics-sec {
-  height: 25%;
+  height: 15%;
   /* background-color: rgb(38, 174, 174); */
   display: flex;
   align-items: center;
@@ -96,10 +118,16 @@
   height: 50%;
 }
 .bird-statistics-sec .statastics-logo-sec i {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
-.stastics-sec .bird-statistics-sec .statastics-logo-sec span:nth-child(2) {
-  font-size: 1.4rem;
+.statastics-logo-sec span:nth-child(2) {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.statastics-logo-sec span:nth-child(3) {
+  font-size: 1rem;
+  font-weight: 500;
 }
 .bird-media-sec {
   /* border: 2px solid green; */
@@ -110,7 +138,7 @@
 }
 
 .banner-image {
-  border: 5px solid rgb(246, 255, 0);
+  /* border: 5px solid rgb(246, 255, 0); */
   height: 100%;
 }
 
@@ -170,10 +198,13 @@
   object-position: center;
   border-radius: 8px;
 }
-.indentification-sec {
-  border: 2px solid red;
+.bird-briefinfo-sec {
+  border: 2px solid green;
+  box-shadow: 0.5px 0.5px 20px green;
   width: 80%;
   margin: auto;
+  border-radius: 8px;
+  padding: 30px;
 }
 
 .stastics-sec {
@@ -203,7 +234,7 @@
 
 .pipe {
   width: 6px;
-  background: red;
+  background: green;
   border-radius: 0px 0px 8px 8px;
 }
 
