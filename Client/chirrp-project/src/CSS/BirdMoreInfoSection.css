@@ -207,6 +207,19 @@
   padding: 30px;
 }
 
+.bird-briefinfo-sec h2 {
+  font-size: 1.7rem;
+  letter-spacing: 0.1px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.bird-briefinfo-sec p {
+  font-size: 1rem;
+  line-height: 25px;
+  text-align: justify;
+}
+
 .stastics-sec {
   border: 2px solid blue;
   width: 80vw;
@@ -235,25 +248,19 @@
 .pipe {
   width: 6px;
   background: green;
-  border-radius: 0px 0px 8px 8px;
+  /* border-radius: 0px 0px 8px 8px; */
+}
+.pipe1 {
+  height: 150px;
+  margin-left: 15vw;
+}
+.pipe2,
+.pipe3,
+.pipe4 {
+  height: 50px;
+  margin-left: 2.5vw;
 }
 
-.pipe1 {
-  height: 200px;
-  margin-left: 20vw;
-}
-.pipe2 {
-  height: 200px;
-  margin-left: 15vw;
-}
-.pipe3 {
-  height: 80px;
-  margin-left: 15vw;
-}
-.pipe4 {
-  height: 80px;
-  margin-left: 15vw;
-}
 .pipe5 {
   height: 200px;
   margin-left: 15vw;
@@ -263,28 +270,34 @@
   margin-left: 15vw;
 }
 .allmedia-sec {
-  border: 2px solid red;
-  height: 50px;
+  border: 2px solid green;
   width: 80vw;
   margin: auto;
+  padding: 30px;
+  border-radius: 8px;
 }
 
 .allmedia-sec .photo-sec {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 70vw;
   margin: auto;
+  padding: 20px;
 }
 
 .allmedia-sec .photo-sec .grid {
   display: flex;
   overflow-x: scroll;
+  padding: 20px;
+  /* border: 2px solid red; */
 }
 
 .allmedia-sec .video-sec {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 70vw;
   margin: auto;
+  padding: 20px;
 }
 .allmedia-sec .video-sec .grid {
   display: flex;
+  padding: 20px;
 }

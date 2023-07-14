@@ -142,6 +142,7 @@ function BirdsMoreInfoSection() {
           of forests, often near bamboo clusters; also follows mixed-species
           foraging flocks. Gives a series of inflected yelps: “kweh, kweh, kweh.
         </p>
+        <div className="pipe pipe2"></div>
         <h2>Appearance</h2>
         <p>
           Like most other trogons, these birds are brightly coloured and
@@ -163,6 +164,7 @@ function BirdsMoreInfoSection() {
           faces back and in zygodactyly II and III face forward while I and IV
           face backwards.
         </p>
+        <div className="pipe pipe3"></div>
         <h2>Habits and Lifestyle</h2>
         <p>
           These birds usually perch still, especially when alarmed and will
@@ -172,6 +174,7 @@ function BirdsMoreInfoSection() {
           calls. The breeding season in India is mainly February to May (before
           the Monsoons) while it is March to June in Sri Lanka.
         </p>
+        <div className="pipe pipe4"></div>
         <h2>Diet and Nutrition</h2>
         <p>
           These birds usually perch still, especially when alarmed and will
@@ -182,8 +185,7 @@ function BirdsMoreInfoSection() {
           the Monsoons) while it is March to June in Sri Lanka.
         </p>
       </div>
-      <div className="pipe pipe2"></div>
-      <div className="stastics-sec">
+      {/* <div className="stastics-sec">
         <h1>Statistics</h1>
         <div className="pipe pipe3"></div>
         <div className="bar-chart">
@@ -200,18 +202,17 @@ function BirdsMoreInfoSection() {
               [8.0844, 77.5495],
             ]}
             minZoom={5}
-            maxZoom={18}
+            maxZoom={30}
             maxBoundsViscosity={1.0}
             className="map-container"
           >
             <TileLayer url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=mlxXWj5uMNAXHCVKX1eX" />
           </MapContainer>
         </div>
-      </div>
+      </div> */}
       <div className="pipe pipe5"></div>
       <div className="allmedia-sec">
         <h1>All Media</h1>
-        <div className="pipe pipe4"></div>
         <div className="photo-sec">
           <h2>Captured Photos</h2>
           <div className="grid">
