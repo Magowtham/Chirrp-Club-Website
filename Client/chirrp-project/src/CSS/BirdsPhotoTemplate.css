@@ -29,7 +29,7 @@
   position: relative;
 }
 
-.birds-template-card .text-sec h2 {
+.birds-template-card .text-sec h3 {
   font-size: var(--gallery-subheadingfont-size);
   margin-top: 1px;
   margin-bottom: 1px;

@@ -24,7 +24,7 @@ function BirdsPhotoTemplate({
           <img src={imageSrc} alt="" />
         </div>
         <div className="text-sec">
-          <h2>{birdName}</h2>
+          <h3>{birdName}</h3>
           <p>{birdScientificName}</p>
           <p>{photographerName}</p>
           <p>

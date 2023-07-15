@@ -3,7 +3,10 @@ import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
 import L, { icon } from "leaflet";
 import BirdsPhotoTemplate from "./BirdsPhotoTemplate";
 import BirdsVideoTemplate from "./BirdsVideoTemplate";
+import AudioCardTemplate from "./AudioCardTemplate";
+import "../CSS/AudioCardTemplate.css";
 import "leaflet.vectorgrid/dist/Leaflet.VectorGrid.bundled.js";
+
 // import "leaflet.vectorgrid/dist/Leaflet.VectorGrid.bundled.css";
 import "leaflet/dist/leaflet.css";
 import "../CSS/BirdMoreInfoSection.css";
@@ -33,7 +36,7 @@ function BirdsMoreInfoSection() {
       <div className="birds-moreinfo-container">
         <div className="bird-info-sec">
           <div className="heading-sec">
-            <h1>Malabar Trogon</h1>
+            <h1>Malbar Grey Hornbill</h1>
             <h2>Harpactes fasciatus</h2>
             <h2>ಮಲಬಾರ್ ಟ್ರೋಗನ್ </h2>
           </div>
@@ -210,9 +213,18 @@ function BirdsMoreInfoSection() {
           </MapContainer>
         </div>
       </div> */}
-      <div className="pipe pipe5"></div>
+      <div className="pipe pipe8"></div>
       <div className="allmedia-sec">
         <h1>All Media</h1>
+        <div className="audio-sec">
+          <h2>Audio</h2>
+          <div className="grid">
+            <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
+            <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
+            <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
+            <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
+          </div>
+        </div>
         <div className="photo-sec">
           <h2>Captured Photos</h2>
           <div className="grid">
@@ -262,7 +274,7 @@ function BirdsMoreInfoSection() {
             />
           </div>
         </div>
-        <div className="pipe pipe6"></div>
+        <div className="pipe pipe9"></div>
         <div className="video-sec">
           <h2>Captured Videos</h2>
           <div className="grid">

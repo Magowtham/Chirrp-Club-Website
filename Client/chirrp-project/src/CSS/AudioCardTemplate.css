@@ -1,0 +1,136 @@
+:root {
+  --beakUp: 0;
+  --beakDown: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.audio-card {
+  border: 2px solid green;
+  width: fit-content;
+  border-radius: 8px;
+  background: rgb(202, 202, 202);
+  padding: 10px;
+}
+.audio-card .animation-sec {
+  /* border: 2px solid yellow; */
+}
+
+.audio-card .text-sec {
+  /* border: 2px solid burlywood; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.audio-card .text-sec button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: green;
+  border: 0;
+}
+.audio-card .text-sec button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.audio-card .text-sec button i {
+  color: white;
+  font-size: 1rem;
+}
+.audio-card .animation-sec .frame {
+  width: 90px;
+  height: 60px;
+  /* border: 2px solid rgb(225, 0, 255); */
+  position: relative;
+}
+.frame .bird {
+  left: 50%;
+  transform: translateX(-50%);
+  /* border: 2px solid yellow; */
+}
+.frame *,
+.frame *::before,
+.frame *::after {
+  content: "";
+  position: absolute;
+}
+
+.frame *,
+.frame *::before,
+.frame *::after {
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.bird__head {
+  width: 40px;
+  height: 45px;
+  border-radius: 50% 54% 0 0 / 35% 41% 0 0;
+  background-color: green;
+  position: relative;
+}
+
+.bird__eye {
+  width: 10px;
+  height: 10px;
+  top: 28%;
+  border-radius: 50%;
+  left: 42%;
+  background-color: white;
+  position: absolute;
+}
+
+.bird__eye::before {
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin: -25% 0 0 -17%;
+}
+
+.bird__beak {
+  position: absolute;
+  left: 95%;
+  top: 20%;
+}
+.bird__beak::before {
+  /* border-bottom: 0px solid red; */
+  border-left: 20px solid brown;
+  border-top: 10px solid transparent;
+  animation: ease-in beak-up var(--beakUp) 600ms;
+}
+
+.bird__beak::after {
+  top: 9.5px;
+  border-top: 0;
+  border-left: 20px solid var(--color);
+  border-bottom: 10px solid transparent;
+  animation: ease-in beak-down var(--beakDown) 600ms;
+}
+
+@keyframes beak-up {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-34deg) translate(1px, -4px);
+  }
+}
+
+@keyframes beak-down {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(34deg) translate(1px, 4px);
+  }
+}

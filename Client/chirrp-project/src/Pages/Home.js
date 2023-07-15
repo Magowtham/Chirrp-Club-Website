@@ -12,6 +12,7 @@ import TeamCardTemplate from "../Components/TeamCardTemplate";
 import TeamSlider from "../Components/TeamSlider";
 import "../CSS/Home.css";
 import BirdsMoreInfoSection from "../Components/BirdMoreInfoSection";
+import AudioPlayer from "../Components/AudioPlayer";
 function Home() {
   const [overlay, setOverlay] = useState(true);
   return (
@@ -21,7 +22,8 @@ function Home() {
       <GallerySection />
       <VideoGallerySection />
       <Team /> */}
-      <BirdsMoreInfoSection />
+      {/* <BirdsMoreInfoSection /> */}
+      <AudioPlayer />
     </div>
   );
 }
