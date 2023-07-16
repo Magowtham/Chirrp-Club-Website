@@ -36,7 +36,9 @@ function BirdsMoreInfoSection() {
       <div className="birds-moreinfo-container">
         <div className="bird-info-sec">
           <div className="heading-sec">
-            <h1>Malbar Grey Hornbill</h1>
+            <h1>
+              Malbar Trogon border: 2px solid blue; border: 2px solid blue;
+            </h1>
             <h2>Harpactes fasciatus</h2>
             <h2>ಮಲಬಾರ್ ಟ್ರೋಗನ್ </h2>
           </div>
@@ -220,9 +222,13 @@ function BirdsMoreInfoSection() {
           <h2>Audio</h2>
           <div className="grid">
             <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
+            <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
+            <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
+            <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
+            <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
           </div>
         </div>
         <div className="photo-sec">

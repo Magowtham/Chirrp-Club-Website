@@ -22,8 +22,8 @@ function Home() {
       <GallerySection />
       <VideoGallerySection />
       <Team /> */}
-      {/* <BirdsMoreInfoSection /> */}
-      <AudioPlayer />
+      <BirdsMoreInfoSection />
+      {/* <AudioPlayer /> */}
     </div>
   );
 }

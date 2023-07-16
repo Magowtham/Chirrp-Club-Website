@@ -2,23 +2,25 @@ import React, { useRef, useState, useEffect, useCallback } from "react";
 
 function AudioCardTemplate({ audioSrc }) {
   const [isAudioPlaying, setAudioPlaying] = useState(false);
-  const birdBeakRef = useRef();
-  const audio = new Audio(audioSrc);
-  console.log(isAudioPlaying);
-  // useEffect(() => {
-  //   if (isAudioPlaying) {
-  //     audio.play();
-  //     document.documentElement.style.setProperty("--beakUp", "infinite");
-  //     document.documentElement.style.setProperty("--beakDown", "infinite");
-  //   } else {
-  //     audio.pause();
-  //     document.documentElement.style.setProperty("--beakUp", 0);
-  //     document.documentElement.style.setProperty("--beakDown", 0);
-  //   }
-  // }, [isAudioPlaying]);
+  const beakUpRef = useRef(null);
+  const beakDownRef = useRef(null);
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    if (isAudioPlaying) {
+      audioRef.current.play();
+      beakUpRef.current.style.setProperty("--beakup", "infinite");
+      beakDownRef.current.style.setProperty("--beakdown", "infinite");
+    } else {
+      audioRef.current.pause();
+      beakUpRef.current.style.setProperty("--beakup", 0);
+      beakDownRef.current.style.setProperty("--beakdown", 0);
+    }
+  }, [isAudioPlaying]);
 
   return (
     <>
+      <audio ref={audioRef} src={audioSrc} />
       <div className="audio-card">
         <div className="animation-sec">
           <div className="frame">
@@ -26,7 +28,10 @@ function AudioCardTemplate({ audioSrc }) {
               <div className="bird__head">
                 <div className="bird__eye"></div>
               </div>
-              <div className="bird__beak" ref={birdBeakRef}></div>
+              <div className="bird__beak">
+                <div className="up-beak" ref={beakUpRef}></div>
+                <div className="down-beak" ref={beakDownRef}></div>
+              </div>
             </div>
           </div>
         </div>
@@ -35,14 +40,11 @@ function AudioCardTemplate({ audioSrc }) {
           <button
             onClick={() => {
               setAudioPlaying(!isAudioPlaying);
-              if (isAudioPlaying) {
-                audio.play();
-              } else {
-                audio.pause();
-              }
             }}
           >
-            <i className="material-icons">play_arrow</i>
+            <i className="material-icons">
+              {isAudioPlaying ? "pause" : "play_arrow"}
+            </i>
           </button>
         </div>
       </div>

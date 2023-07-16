@@ -18,9 +18,14 @@ const AudioPlayer = () => {
     <div>
       <audio ref={audioRef} src="/Media/bird1.mp3" />
       {isPlaying ? (
-        <button onClick={handlePause}>Pause</button>
+        <button onClick={handlePause} className="">
+          <i className="material-icons">pause</i>
+        </button>
       ) : (
-        <button onClick={handlePlay}>Play</button>
+        <button onClick={handlePlay}>
+          {" "}
+          <i className="material-icons">play_arrow</i>
+        </button>
       )}
     </div>
   );
