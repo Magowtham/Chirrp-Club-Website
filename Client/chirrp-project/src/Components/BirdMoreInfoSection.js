@@ -36,9 +36,7 @@ function BirdsMoreInfoSection() {
       <div className="birds-moreinfo-container">
         <div className="bird-info-sec">
           <div className="heading-sec">
-            <h1>
-              Malbar Trogon border: 2px solid blue; border: 2px solid blue;
-            </h1>
+            <h1>Malbar Trogon</h1>
             <h2>Harpactes fasciatus</h2>
             <h2>ಮಲಬಾರ್ ಟ್ರೋಗನ್ </h2>
           </div>
