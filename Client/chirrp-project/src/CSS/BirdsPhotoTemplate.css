@@ -11,6 +11,8 @@
   height: fit-content;
   cursor: pointer;
   border-radius: 8px;
+  max-width: 300px;
+  min-width: 300px;
 }
 
 .birds-template-card .image-sec {
@@ -30,16 +32,16 @@
 }
 
 .birds-template-card .text-sec h3 {
-  font-size: var(--gallery-subheadingfont-size);
+  font-size: 1.2rem;
   margin-top: 1px;
   margin-bottom: 1px;
-  font-weight: var(--gallery-subheadingfont-weight);
+  font-weight: 900;
 }
 .birds-template-card .text-sec p {
-  font-size: var(--gallery-paragraphfont-size);
+  font-size: 1rem;
   margin-top: 0.5px;
   margin-bottom: 0.5px;
-  font-weight: var(--gallery-paragraph-fontweight);
+  font-weight: 500;
   letter-spacing: var(--gallery-paragraphletter-spacing);
 }
 

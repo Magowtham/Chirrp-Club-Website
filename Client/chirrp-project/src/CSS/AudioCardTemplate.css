@@ -21,7 +21,10 @@
   justify-content: space-around;
   align-items: center;
 }
-
+.audio-card .text-sec h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
 .audio-card .text-sec button {
   width: 30px;
   height: 30px;
@@ -41,7 +44,8 @@
 .audio-card .animation-sec .frame {
   width: 90px;
   height: 60px;
-  /* border: 2px solid rgb(225, 0, 255); */
+  max-width: 90px;
+  min-width: 90px;
   position: relative;
 }
 .frame .bird {

@@ -5,9 +5,18 @@
 }
 .birds-template-card .template-video-sec {
   position: relative;
-  border: 5px solid rgb(51, 255, 0);
   width: 300px;
   max-width: 300px;
+  min-width: 300px;
+}
+.birds-template-card .text-sec h2 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.birds-template-card .text-sec p {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .birds-template-card .template-video-sec video {

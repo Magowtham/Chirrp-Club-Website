@@ -23,7 +23,6 @@ function Home() {
       <VideoGallerySection />
       <Team /> */}
       <BirdsMoreInfoSection />
-      {/* <AudioPlayer /> */}
     </div>
   );
 }

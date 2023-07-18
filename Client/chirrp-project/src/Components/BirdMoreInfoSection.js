@@ -6,6 +6,7 @@ import BirdsVideoTemplate from "./BirdsVideoTemplate";
 import AudioCardTemplate from "./AudioCardTemplate";
 import "../CSS/AudioCardTemplate.css";
 import "leaflet.vectorgrid/dist/Leaflet.VectorGrid.bundled.js";
+import Navbar from "./Navbar";
 
 // import "leaflet.vectorgrid/dist/Leaflet.VectorGrid.bundled.css";
 import "leaflet/dist/leaflet.css";
@@ -26,18 +27,30 @@ function BirdsMoreInfoSection() {
     }, step);
   };
 
+  const adjustPipeGap = () => {
+    const totalPipegap = (15 / 100) * window.innerWidth;
+    document.documentElement.style.setProperty(
+      "--birdInfoPipeWidth",
+      `${totalPipegap - ((10 / 100) * window.innerWidth + 30)}px`
+    );
+  };
+
   useEffect(() => {
     counter(observeRef.current, 0, 400, 5000);
     counter(photoCaptureRef.current, 0, 400, 4000);
     counter(videoCaptureRef.current, 0, 400, 3000);
-  });
+
+    window.addEventListener("resize", adjustPipeGap);
+    adjustPipeGap();
+  }, []);
   return (
     <>
+      {/* <Navbar /> */}
       <div className="birds-moreinfo-container">
         <div className="bird-info-sec">
           <div className="heading-sec">
-            <h1>Malbar Trogon</h1>
-            <h2>Harpactes fasciatus</h2>
+            <h1>Oriental Magpie Robin</h1>
+            <h2>Harpactes fasciatusfir</h2>
             <h2>ಮಲಬಾರ್ ಟ್ರೋಗನ್ </h2>
           </div>
           <div className="scientific-info-sec">
@@ -111,7 +124,7 @@ function BirdsMoreInfoSection() {
         </div>
         <div className="bird-media-sec">
           <div className="banner-image">
-            <img src="/Media/bird-6.jpeg" alt="" />
+            <img src="/Media/bird-7.jpeg" alt="" />
           </div>
           <div className="subimage-sec">
             <div className="image-sec">
@@ -217,7 +230,7 @@ function BirdsMoreInfoSection() {
       <div className="allmedia-sec">
         <h1>All Media</h1>
         <div className="audio-sec">
-          <h2>Audio</h2>
+          <h2>Audios</h2>
           <div className="grid">
             <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
@@ -227,60 +240,61 @@ function BirdsMoreInfoSection() {
             <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
-          </div>
-        </div>
-        <div className="photo-sec">
-          <h2>Captured Photos</h2>
-          <div className="grid">
-            <BirdsPhotoTemplate
-              onClickRout={{ url: "/Media/bird-1.jpeg" }}
-              imageSrc="/Media/bird-1.jpeg"
-              birdName="Malabar Whistling Thrush"
-              birdScientificName="myophonous horsfieldii"
-              photographerName="Mike Prince"
-              day="23"
-              month="Nov"
-              year="2016"
-              location="Shobhavana Campus"
-            />
-            <BirdsPhotoTemplate
-              onClickRout={{ url: "/Media/bird-1.jpeg" }}
-              imageSrc="/Media/bird-1.jpeg"
-              birdName="Malabar Whistling Thrush"
-              birdScientificName="myophonous horsfieldii"
-              photographerName="Mike Prince"
-              day="23"
-              month="Nov"
-              year="2016"
-              location="Shobhavana Campus"
-            />
-            <BirdsPhotoTemplate
-              onClickRout={{ url: "/Media/bird-1.jpeg" }}
-              imageSrc="/Media/bird-1.jpeg"
-              birdName="Malabar Whistling Thrush"
-              birdScientificName="myophonous horsfieldii"
-              photographerName="Mike Prince"
-              day="23"
-              month="Nov"
-              year="2016"
-              location="Shobhavana Campus"
-            />
-            <BirdsPhotoTemplate
-              onClickRout={{ url: "/Media/bird-1.jpeg" }}
-              imageSrc="/Media/bird-1.jpeg"
-              birdName="Malabar Whistling Thrush"
-              birdScientificName="myophonous horsfieldii"
-              photographerName="Mike Prince"
-              day="23"
-              month="Nov"
-              year="2016"
-              location="Shobhavana Campus"
-            />
           </div>
         </div>
         <div className="pipe pipe9"></div>
+        <div className="photo-sec">
+          <h2>Photos</h2>
+          <div className="grid">
+            <BirdsPhotoTemplate
+              onClickRout={{ url: "/Media/bird-1.jpeg" }}
+              imageSrc="/Media/bird-1.jpeg"
+              birdName="Malabar Whistling Thrush"
+              birdScientificName="myophonous horsfieldii"
+              photographerName="Mike Prince"
+              day="23"
+              month="Nov"
+              year="2016"
+              location="Shobhavana Campus"
+            />
+            <BirdsPhotoTemplate
+              onClickRout={{ url: "/Media/bird-1.jpeg" }}
+              imageSrc="/Media/bird-1.jpeg"
+              birdName="Malabar Whistling Thrush"
+              birdScientificName="myophonous horsfieldii"
+              photographerName="Mike Prince"
+              day="23"
+              month="Nov"
+              year="2016"
+              location="Shobhavana Campus"
+            />
+            <BirdsPhotoTemplate
+              onClickRout={{ url: "/Media/bird-1.jpeg" }}
+              imageSrc="/Media/bird-1.jpeg"
+              birdName="Malabar Whistling Thrush"
+              birdScientificName="myophonous horsfieldii"
+              photographerName="Mike Prince"
+              day="23"
+              month="Nov"
+              year="2016"
+              location="Shobhavana Campus"
+            />
+            <BirdsPhotoTemplate
+              onClickRout={{ url: "/Media/bird-1.jpeg" }}
+              imageSrc="/Media/bird-1.jpeg"
+              birdName="Malabar Whistling Thrush"
+              birdScientificName="myophonous horsfieldii"
+              photographerName="Mike Prince"
+              day="23"
+              month="Nov"
+              year="2016"
+              location="Shobhavana Campus"
+            />
+          </div>
+        </div>
+        <div className="pipe pipe10"></div>
         <div className="video-sec">
-          <h2>Captured Videos</h2>
+          <h2>Videos</h2>
           <div className="grid">
             <BirdsVideoTemplate
               videoSrc="/Media/v1.mp4"

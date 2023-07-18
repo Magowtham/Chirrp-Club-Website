@@ -24,7 +24,7 @@ function BirdsVideoTemplate({
           <video src={videoSrc} controls={false}></video>
         </div>
         <div className="text-sec">
-          <h2>{birdName}</h2>
+          <h3>{birdName}</h3>
           <p>{birdScientificName}</p>
           <p>{photographer}</p>
           <p>
