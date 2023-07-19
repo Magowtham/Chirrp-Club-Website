@@ -54,55 +54,51 @@ function BirdsMoreInfoSection() {
             <h2>ಮಲಬಾರ್ ಟ್ರೋಗನ್ </h2>
           </div>
           <div className="scientific-info-sec">
-            <div className="node-sec">
-              <ul>
-                <li>
-                  <span>1</span>
-                </li>
-                <hr />
-                <li>
-                  <span>2</span>
-                </li>
-                <hr />
-                <li>
-                  <span>3</span>
-                </li>
-                <hr />
-                <li>
-                  <span>4</span>
-                </li>
-                <hr />
-                <li>
-                  <span>5</span>
-                </li>
-                <hr />
-                <li>
-                  <span>6</span>
-                </li>
-                <hr />
-                <li>
-                  <span>7</span>
-                </li>
-              </ul>
-            </div>
-            <div className="biologoical-order-sec">
-              <h2>KINGDOM</h2>
-              <h2>PHYLUM</h2>
-              <h2>CLASS</h2>
-              <h2>ORDER</h2>
-              <h2>FAMILY</h2>
-              <h2>GENUS</h2>
-              <h2>SPECIES</h2>
-            </div>
-            <div className="biological-data-sec">
-              <h2>Animalia</h2>
-              <h2>Chordata</h2>
-              <h2>Aves</h2>
-              <h2>Trogoniformes</h2>
-              <h2>Trogonidae</h2>
-              <h2>Harpactes</h2>
-              <h2>Harpactes fasciatus</h2>
-            </div>
+            <ul>
+              <li>1</li>
+              <div className="biological-order-pipe"></div>
+              <li>2</li>
+              <div className="biological-order-pipe"></div>
+              <li>3</li>
+              <div className="biological-order-pipe"></div>
+              <li>4</li>
+              <div className="biological-order-pipe"></div>
+              <li>5</li>
+              <div className="biological-order-pipe"></div>
+              <li>6</li>
+              <div className="biological-order-pipe"></div>
+              <li>7</li>
+            </ul>
+            <ul>
+              <li>
+                <span>KINGDOM</span>
+                <span>Animalia</span>
+              </li>
+              <li>
+                <span>PHYLUM</span>
+                <span>Chordata</span>
+              </li>
+              <li>
+                <span>CLASS</span>
+                <span>Aves</span>
+              </li>
+              <li>
+                <span>ORDER</span>
+                <span>Trogoniformes</span>
+              </li>
+              <li>
+                <span>FAMILY</span>
+                <span>Trogonidae</span>
+              </li>
+              <li>
+                <span>GENUS</span>
+                <span>Harpactes</span>
+              </li>
+              <li>
+                <span>SPECIES</span>
+                <span>Harpactes fasciatus</span>
+              </li>
+            </ul>
           </div>
           <div className="bird-statistics-sec">
             <div className="statastics-logo-sec">
@@ -232,14 +228,14 @@ function BirdsMoreInfoSection() {
         <div className="audio-sec">
           <h2>Audios</h2>
           <div className="grid">
-            <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
+            <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
+            <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
+            {/* <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
-            <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
-            <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
-            <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
+            <AudioCardTemplate audioSrc="/Media/bird2.mp3" /> */}
           </div>
         </div>
         <div className="pipe pipe9"></div>
