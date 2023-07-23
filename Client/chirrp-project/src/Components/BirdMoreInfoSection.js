@@ -4,13 +4,14 @@ import L, { icon } from "leaflet";
 import BirdsPhotoTemplate from "./BirdsPhotoTemplate";
 import BirdsVideoTemplate from "./BirdsVideoTemplate";
 import AudioCardTemplate from "./AudioCardTemplate";
-import "../CSS/AudioCardTemplate.css";
+import "../CSS/BirdMoreInfoSection.css";
+import "../CSS/test.css";
 import "leaflet.vectorgrid/dist/Leaflet.VectorGrid.bundled.js";
 import Navbar from "./Navbar";
 
 // import "leaflet.vectorgrid/dist/Leaflet.VectorGrid.bundled.css";
 import "leaflet/dist/leaflet.css";
-import "../CSS/BirdMoreInfoSection.css";
+
 function BirdsMoreInfoSection() {
   const observeRef = useRef(null);
   const photoCaptureRef = useRef(null);
@@ -49,7 +50,7 @@ function BirdsMoreInfoSection() {
       <div className="birds-moreinfo-container">
         <div className="bird-info-sec">
           <div className="heading-sec">
-            <h1>Oriental Magpie Robin</h1>
+            <h1>White Bellied Sea Eagle</h1>
             <h2>Harpactes fasciatusfir</h2>
             <h2>ಮಲಬಾರ್ ಟ್ರೋಗನ್ </h2>
           </div>
@@ -100,46 +101,48 @@ function BirdsMoreInfoSection() {
               </li>
             </ul>
           </div>
-          <div className="bird-statistics-sec">
-            <div className="statastics-logo-sec">
-              <i className="material-icons">done</i>
-              <span ref={observeRef}>0</span>
-              <span>observatios</span>
-            </div>
-            <div className="statastics-logo-sec">
-              <i className="material-icons">photo_camera</i>
-              <span ref={photoCaptureRef}>0</span>
-              <span>with photos</span>
-            </div>
-            <div className="statastics-logo-sec">
-              <i className="material-icons">videocam</i>
-              <span ref={videoCaptureRef}>0</span>
-              <span>with videos</span>
-            </div>
-          </div>
         </div>
         <div className="bird-media-sec">
           <div className="banner-image">
-            <img src="/Media/bird-7.jpeg" alt="" />
+            <img src="/Media/bird-3.jpeg" alt="" />
           </div>
-          <div className="subimage-sec">
-            <div className="image-sec">
-              <img src="/Media/bird-6.jpeg" alt="" />
-              <span>male</span>
-            </div>
-            <div className="image-sec">
-              <img src="/Media/bird-6.jpeg" alt="" />
-              <span>female</span>
-            </div>
+        </div>
+      </div>
+      <div className="more-info-sub-sec">
+        <div className="subimage-sec">
+          <div className="image-sec">
+            <img src="/Media/bird-6.jpeg" alt="" />
+            <span>male</span>
+          </div>
+          <div className="image-sec">
+            <img src="/Media/bird-6.jpeg" alt="" />
+            <span>female</span>
+          </div>
 
-            <div className="image-sec">
-              <img src="/Media/bird-6.jpeg" alt="" />
-              <span>female</span>
-            </div>
-            <div className="image-sec">
-              <img src="/Media/bird-6.jpeg" alt="" />
-              <span>male</span>
-            </div>
+          <div className="image-sec">
+            <img src="/Media/bird-6.jpeg" alt="" />
+            <span>female</span>
+          </div>
+          <div className="image-sec">
+            <img src="/Media/bird-6.jpeg" alt="" />
+            <span>male</span>
+          </div>
+        </div>
+        <div className="bird-statistics-sec">
+          <div className="statastics-logo-sec">
+            <i className="material-icons">done</i>
+            <span ref={observeRef}>0</span>
+            <span>observatios</span>
+          </div>
+          <div className="statastics-logo-sec">
+            <i className="material-icons">photo_camera</i>
+            <span ref={photoCaptureRef}>0</span>
+            <span>with photos</span>
+          </div>
+          <div className="statastics-logo-sec">
+            <i className="material-icons">videocam</i>
+            <span ref={videoCaptureRef}>0</span>
+            <span>with videos</span>
           </div>
         </div>
       </div>
@@ -228,8 +231,26 @@ function BirdsMoreInfoSection() {
         <div className="audio-sec">
           <h2>Audios</h2>
           <div className="grid">
-            <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
-            <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
+            <AudioCardTemplate
+              audioSrc="/Media/bird1.mp3"
+              bodyColor="yellow"
+              beakColor="blue"
+            />
+            <AudioCardTemplate
+              audioSrc="/Media/bird2.mp3"
+              bodyColor="grey"
+              beakColor="brown"
+            />
+            <AudioCardTemplate
+              audioSrc="/Media/bird1.mp3"
+              bodyColor="black"
+              beakColor="brown"
+            />
+            <AudioCardTemplate
+              audioSrc="/Media/bird2.mp3"
+              bodyColor="yellow"
+              beakColor="blue"
+            />
             {/* <AudioCardTemplate audioSrc="/Media/bird1.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird2.mp3" />
             <AudioCardTemplate audioSrc="/Media/bird1.mp3" />

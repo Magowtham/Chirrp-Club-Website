@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
+import "../CSS/AudioCardTemplate.css";
 
-function AudioCardTemplate({ audioSrc }) {
+function AudioCardTemplate({ audioSrc, bodyColor, beakColor }) {
   const [isAudioPlaying, setAudioPlaying] = useState(false);
   const beakUpRef = useRef(null);
   const beakDownRef = useRef(null);
@@ -25,12 +26,20 @@ function AudioCardTemplate({ audioSrc }) {
         <div className="animation-sec">
           <div className="frame">
             <div className="bird">
-              <div className="bird__head">
+              <div className="bird__head" style={{ background: bodyColor }}>
                 <div className="bird__eye"></div>
               </div>
               <div className="bird__beak">
-                <div className="up-beak" ref={beakUpRef}></div>
-                <div className="down-beak" ref={beakDownRef}></div>
+                <div
+                  className="up-beak"
+                  ref={beakUpRef}
+                  style={{ borderLeftColor: beakColor }}
+                ></div>
+                <div
+                  className="down-beak"
+                  ref={beakDownRef}
+                  style={{ borderLeftColor: beakColor }}
+                ></div>
               </div>
             </div>
           </div>
